@@ -1,0 +1,26 @@
+
+@media (max-width: 710px){
+    body{
+        align-items:normal;
+    }
+    
+    .mainContainer{
+        flex-direction:column;
+        width:350px;
+        height:auto;
+    }
+    .formContainer{
+        width:100%;
+        border-radius:0;
+    }
+    .resultsContainer{
+        width:100%;
+        border-radius:0;
+    }
+    .secondRowDivider{
+        flex-direction:column;
+    }
+    .mortgageTerm, .interestRate{
+        width:100%;
+    }
+}

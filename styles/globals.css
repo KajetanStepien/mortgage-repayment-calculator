@@ -1,0 +1,38 @@
+@font-face {
+    font-family: 'Jakarta Bold';
+    src: url(../assets/fonts/static/PlusJakartaSans-Bold.ttf) format('truetype');
+}
+@font-face {
+    font-family: 'Jakarta Medium';
+    src: url(../assets/fonts/static/PlusJakartaSans-Medium.ttf) format('truetype');
+}
+
+body {
+    background-color: hsl(202, 86%, 94%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    height: 900px;
+}
+
+h1, p {
+    display: flex;
+}
+
+h1 {
+    font-size: 18px;
+    font-family: 'Jakarta Bold', sans-serif;
+    color: hsl(202, 55%, 16%);
+}
+
+h2 {
+    color: white;
+    font-family: 'Jakarta Bold', sans-serif;
+}
+
+.description {
+    font-family: 'Jakarta Medium', sans-serif;
+    color: hsl(203, 41%, 72%);
+    font-size: 12px;
+}

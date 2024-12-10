@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="styles/style.css">
+  <link rel="stylesheet" href="styles/reset.css">
+  <link rel="stylesheet" href="styles/buttons.css">
+  <link rel="stylesheet" href="styles/globals.css">
+  <link rel="stylesheet" href="styles/mobile.css">
+</head>
+<body>
+  <div class="mainContainer">
+    <div class=formContainer>
+      <div class="titleContainer">
+        <h1>Mortgage Calculator</h1><p id="clearButton" class="inputTitle clearButton">Clear All</p>
+      </div>
+      <div class="formDivider1">
+        <div id="mortgageAm" class="mortgageAm">
+          <p class="inputTitle">Mortgage Amount</p><span id="inputContainerMortAmount"class="inputContainer"><span id="poundIcon" class="poundIcon Icon">£</span><input id="mortAm" class="clearable" type="text"/></input></span><p class="erroritle">This field is required</p>
+        </div>
+        <div class="secondRowDivider">
+        <div id="mortgageTerm" class="mortgageTerm"><p class="inputTitle">Mortgage Term</p><span id="inputContainerTerm" class="inputContainer"><input id="mortTerm" class="clearable" type="text" inputmode="numeric" maxlength="2"/><span id="yearsIcon" class="poundIcon years Icon">years</span></span><p class="erroritle">This field is required</p></div>
+        <div id="interestRate" class="interestRate"><p class="inputTitle">Interest Rate</p><span id="inputContainerRate" class="inputContainer"><input id="intRate" class="clearable" type="text" max="100"  /><span id="percentIcon" class="poundIcon percent Icon">%</span></span><p class="erroritle">This field is required</p></div>
+        </div>
+        <div class="mortType">
+          <p class="inputTitle">Mortgage Type</p>
+          <div id="repaymentInputContainer" class="repaymentInputContainer">
+          <input type="radio" id="typeRepayment" class="clearable" name="mort-Type" value="Repayment"/><span class="customRadio customRadio1"></span>
+          <label for="Repayment">Repayment</label>
+          </div>
+          <div class="interestOnlyInputContainer">
+          <input type="radio" id="typeInterest" class="clearable" name="mort-Type" value="InterestOnly"/><span class="customRadio customRadio2"></span>
+          <label for="InterestOnly">Interest Only</label>
+        </div>
+        <p class="erroritle">This field is required</p>
+        </div>
+        <div class="calculateButton" id="calculateButton">
+          <img class="calculatorIcon" src="./assets/images/icon-calculator.svg"><p class="buttonLabel">Calculate Repayments</p>
+        </div>
+      </div>
+    </div>
+    <div class="resultsContainer">
+      <div class="clearState" id="clearState">
+        <div class="emptyIconContainer"><img class="emptyIcon" src="./assets/images/illustration-empty.svg"></div>
+        <div class="headerContainer"><h2>Results shown here</h2></div>
+        <div class="descContainer"><span class="description">Complete the form and click "calculate repayments" to see what your monthly repayments would be.</span></div>
+      </div>
+      <div class="resultsState clearState" id="resultsState">
+        <div class="headerContainer"><h2>Your results</h2></div>
+        <div class="descContainer resultsDescription"><span class="description">Your results are shown below based on the information you provided. To adjust the results, edit the form and click "calculate repayments" again.</span></div>
+        <span class="limeLine"><div class="resultAmountBlock">
+          <div class="finalResultBlock">
+          <span class="resultTitle">Your monthly repayments</span>
+          <span class="monthlyRepayment" id="monthlyRepayment"></span>
+          <span class="resultsDivider"></span>
+          <span class="resultTitle"> Total you'll repay over the term</span>
+          <span class="totalRepay" id="totalRepay"></span>
+          </div>
+        </div></span>
+      </div>
+    </div>
+  </div>
+<script src="js/app.js"></script>  
+</body>
+</html>

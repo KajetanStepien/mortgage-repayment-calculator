@@ -1,0 +1,62 @@
+.calculateButton {
+    background-color: hsl(61, 70%, 52%);
+    border-radius: 20px;
+    width: 90%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.calculateButton:hover {
+    background-color: hsl(61, 100%, 75%);
+    cursor: pointer;
+}
+
+.clearButton:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+.mortgageAm, .secondRowDivider, .mortType, .calculateButton {
+    margin: 10px 0px;
+}
+
+.mortgageAm {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.mortgageTerm, .interestRate {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+}
+
+.repaymentInputContainer, .interestOnlyInputContainer {
+    margin: 5px 0px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 40px;
+    border: 1px solid hsl(200, 26%, 54%);
+    border-radius: 5px;
+}
+
+.repaymentInputContainer:hover, .interestOnlyInputContainer:hover {
+    cursor: pointer;
+    border-color: hsl(61, 70%, 52%);
+}
+
+input {
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    font-family: 'Jakarta Bold', sans-serif;
+    color: hsl(202, 55%, 16%);
+    font-size: 16px;
+    margin-left: 3px;
+    cursor:pointer;
+}
